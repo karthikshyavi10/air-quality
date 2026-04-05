@@ -5,13 +5,11 @@ body {
 }
 
 body {
-    font-family: Arial;
-    text-align: center;
-    background: url("https://wallpapers.com/images/hd/air-pollution-pictures-tmryghhsdbiqcqd6.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: rgb(187, 245, 61);
+  background-image: url('https://wallpapers.com/images/hd/air-pollution-pictures-tmryghhsdbiqcqd6.jpg');
+  background-size: cover;        /* Fill screen without stretching */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* Optional: fixed during scroll */
 }
 .form {
     margin: 20px;
@@ -27,4 +25,86 @@ button {
     background: rgb(255, 255, 74);
     color: rgb(237, 66, 66);
     border: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px; /* Works well on large screens */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  width: 100%; /* Full width for all devices */
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0072ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+  input, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  .container {
+    max-width: 500px;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+.result-box {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.4);
+  max-width: 100%;
+  word-wrap: break-word;
+  margin-top: 20px;
 }
