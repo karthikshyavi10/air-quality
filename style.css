@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #fc7420;
+}
+
+body {
+    font-family: Arial;
+    text-align: center;
+    background: url("https://wallpapers.com/images/hd/air-pollution-pictures-tmryghhsdbiqcqd6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: rgb(187, 245, 61);
+}
+.form {
+    margin: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: rgb(255, 255, 74);
+    color: rgb(237, 66, 66);
+    border: none;
+}
