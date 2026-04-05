@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+
+
+    <!DOCTYPE html>
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <head>
@@ -7,6 +9,15 @@
 </head>
 <body>
     <h1>🌍 Air Quality Predictor</h1>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container text-center mt-5">
+  <input class="form-control mb-3" type="number" placeholder="PM2.5">
+  <input class="form-control mb-3" type="number" placeholder="PM10">
+  <input class="form-control mb-3" type="number" placeholder="NO2">
+  <button class="btn btn-primary w-100">Predict</button>
+  <div class="result-box mt-3"></div>
+</div>
 
     <div class="form">
         <input type="number" id="pm25" placeholder="PM2.5">
@@ -21,3 +32,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+   
